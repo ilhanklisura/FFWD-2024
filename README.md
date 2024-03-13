@@ -14,7 +14,6 @@ The first project is a personal portfolio website designed to showcase an unders
 - CSS
 - Sass
 - Bootstrap
-- JavaScript
 
 #### Key Features
 - Responsive navigation bar using Bootstrap.
