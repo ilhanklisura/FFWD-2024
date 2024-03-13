@@ -1,0 +1,76 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f3f3f3;
+}
+
+.email-container {
+   max-width: 900px;
+   margin: 20px auto;
+   background-color: #ffffff;
+   border: 1px solid #ddd;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header,
+footer {
+   background-color: #f7b481;
+   text-align: center;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f7b481;
+}
+
+.header-content h1 {
+   margin: 0;
+   font-size: 34px;
+}
+
+.header-image img {
+   width: auto;
+   height: 300px;
+}
+
+.sales-offer {
+   padding: 20px;
+}
+
+.sales-offer h1 {
+   background-color: #fdc9b8;
+   color: #333333;
+   padding: 10px;
+}
+
+.sales-offer p {
+   color: #555;
+   line-height: 1.6;
+}
+
+.product-images {
+   text-align: center;
+   margin: 20px 0;
+}
+
+.product-images img {
+   width: 30%;
+   margin: 0 5px;
+}
+
+footer p {
+   color: #555;
+   margin: 5px 0;
+}
+
+footer a {
+   color: #0077cc;
+   text-decoration: none;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}

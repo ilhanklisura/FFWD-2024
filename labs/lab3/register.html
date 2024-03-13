@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Registration Form</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+   </head>
+   <body>
+      <img src="imgs/ibu.jpeg" height="100" width="100" />
+      <h2>International Burch University</h2>
+      <h3>REGISTRATION FORM</h3>
+      <form action="login.html" method="post">
+         <label for="firstname">Firstname:</label>
+         <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Enter your firstname"
+         /><br />
+         <label for="lastname">Lastname:</label>
+         <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Enter your lastname"
+         /><br />
+         <label for="username">Username:</label>
+         <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+         /><br />
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" /><br />
+         <label for="dob">Date of birth:</label>
+         <input type="date" id="dob" name="dob" /><br />
+         <label for="pob">Place of birth:</label>
+         <input type="text" id="pob" name="pob" /><br />
+         <label>Gender:</label><br />
+         <input type="radio" id="male" name="gender" value="male" />
+         <label for="male">Male</label><br />
+         <input type="radio" id="female" name="gender" value="female" />
+         <label for="female">Female</label><br />
+         <input type="radio" id="other" name="gender" value="other" />
+         <label for="other">Other</label><br />
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" /><br />
+         <label for="phone">Phone:</label>
+         <input type="tel" id="phone" name="phone" /><br />
+         <label for="haircolor">Hair color:</label>
+         <input type="text" id="haircolor" name="haircolor" /><br />
+         <label for="notes">Notes:</label><br />
+         <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br />
+         <input
+            type="checkbox"
+            id="notifications"
+            name="notifications"
+            value="yes"
+         />
+         <label for="notifications">Receive notifications</label><br />
+         <input type="submit" value="Register" />
+      </form>
+   </body>
+</html>
