@@ -1,115 +1,155 @@
+@charset "UTF-8";
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   text-decoration: none;
-   border: none;
-   outline: none;
-   scroll-behavior: smooth;
-   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
+
 :root {
-   --bg-color: #111111;
-   --second-bg-color: #151515;
-   --text-color: white;
-   --main-color: #eb2c43;
+  --bg-color: #111111;
+  --second-bg-color: #151515;
+  --text-color: white;
+  --main-color: #eb2c43;
 }
+
 html {
-   font-size: 62.5%;
-   overflow-x: hidden;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
+
 body {
-   background: var(--bg-color);
-   color: var(--text-color);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
+
 .header {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   padding: 3rem 9%;
-   background: rgba(0, 0, 0, 0.6);
-   backdrop-filter: blur(10px);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 9%;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
+
 .logo {
-   font-size: 3rem;
-   color: var(--text-color);
-   font-weight: 800;
-   cursor: pointer;
-   transition: 0.3s ease-in-out;
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
+
 .logo:hover {
-   transform: scale(1.1);
+  transform: scale(1.1);
 }
+
 .navbar a {
-   font-size: 1.8rem;
-   color: white;
-   margin-left: 4rem;
-   font-weight: 500;
-   transition: 0.3s ease-in-out;
-   border-bottom: 3px solid transparent;
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
 }
+
 .navbar a:hover,
 .navbar a.active {
-   color: var(--main-color);
-   border-bottom: 3px solid var(--main-color);
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
 }
+
 #menu-icon {
-   font-size: 3.6rem;
-   color: var(--main-color);
-   display: none;
+  font-size: 3.6rem;
+  color: var(--main-color);
+  display: none;
 }
+
 section {
-   min-height: 100vh;
-   padding: 10rem 9% 10rem;
+  min-height: 100vh;
+  padding: 10rem 9% 10rem;
 }
+
 .home  {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
+
 .home-content {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   text-align: center;
-   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3rem;
 }
+
 span {
-   color: var(--main-color);
+  color: var(--main-color);
 }
+
 .logo span {
-   color: var(--main-color);
+  color: var(--main-color);
 }
+
 .home-content h3 {
-   margin-bottom: 2rem;
-   margin-top: 1rem;
-   font-size: 3.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
 }
+
 .home-content h1 {
-   font-size: 7rem;
-   font-weight: 700;
-   margin-top: 1.5rem;
-   line-height: 1;
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
 }
+
 .home-img {
-   border-radius: 50%;
+  border-radius: 50%;
 }
+
 .home-img img {
-   position: relative;
-   top: 3rem;
-   width: 22vw;
-   border-radius: 50%;
-   box-shadow: 0 0 25px var(--main-color);
-   cursor: pointer;
-   transition: 0.4s ease-in-out;
+  position: relative;
+  top: 3rem;
+  width: 22vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
 }
+
 .home-img img:hover {
-   box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color);
+  box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color);
 }
+
+.home-content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 1000px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--main-color);
+}/*# sourceMappingURL=styles.css.map */
