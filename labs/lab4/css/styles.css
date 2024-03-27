@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(135deg, #c353bd 0%, #4c55ce 50%, #4c55ce 51%, #8352c6 100%);
+  font-family: "Open Sans", sans-serif;
+}
+
+.login-card {
+  max-width: 400px;
+  border: none;
+}
+.login-card .card-body {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.05);
+}
+
+.login-icon-container {
+  position: relative;
+}
+.login-icon-container .login-icon {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.btn-login {
+  background-color: #5e72e4;
+  border-color: #5e72e4;
+}
+.btn-login:hover {
+  background-color: #485fe0;
+  border-color: #485fe0;
+}
+
+a.text-small {
+  color: #5e72e4;
+}
+a.text-small:hover {
+  color: #324cdd;
+}/*# sourceMappingURL=styles.css.map */
