@@ -1,23 +1,4 @@
-table th {
-  cursor: pointer;
-}
-table th:hover {
-  background-color: #f2f2f2;
-}
-table tbody tr:hover {
-  background-color: #e9ecef;
-}
-
-.sorted-asc::after {
-  content: "\f0de";
-  font-family: "FontAwesome";
-}
-
-.sorted-desc::after {
-  content: "\f0dd";
-  font-family: "FontAwesome";
-}
-
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
 table {
   border-collapse: collapse;
   width: 100%;
@@ -27,25 +8,27 @@ table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  position: relative;
+}
+table th:hover,
+table td:hover {
+  background-color: #f2f2f2;
+}
+table th .fa-sort,
+table td .fa-sort {
+  margin-left: 0.5rem;
+  visibility: visible;
+}
+table th.sorted-asc .fa-sort-up, table th.sorted-desc .fa-sort-down,
+table td.sorted-asc .fa-sort-up,
+table td.sorted-desc .fa-sort-down {
+  visibility: visible;
 }
 table .logo {
   display: inline-block;
   border-radius: 70%;
   margin-right: 5px;
   vertical-align: middle;
-}
-table th {
-  cursor: pointer;
-  position: relative;
-}
-table th:hover {
-  background-color: #f2f2f2;
-}
-table th.sorted-asc::after, table th.sorted-desc::after {
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 table tbody tr:hover {
   background-color: #e9ecef;

@@ -57,9 +57,35 @@ function showModal(userName) {
 }
 
 document.querySelectorAll("th[data-sort]").forEach((header) => {
-   header.addEventListener("click", () => {
-      const sortKey = header.getAttribute("data-sort");
-      users.sort((a, b) => (a[sortKey] > b[sortKey] ? 1 : -1));
+   header.innerHTML += ' <i class="fas fa-sort"></i>';
+   header.addEventListener("click", function () {
+      const sortKey = this.getAttribute("data-sort");
+      const isSortedAsc = this.classList.contains("sorted-asc");
+      document.querySelectorAll("th").forEach((th) => {
+         th.classList.remove("sorted-asc", "sorted-desc");
+         if (th.children.length > 0) {
+            th.children[0].className = "fas fa-sort";
+         }
+      });
+      users.sort((a, b) => {
+         if (a[sortKey] < b[sortKey]) {
+            return isSortedAsc ? 1 : -1;
+         }
+         if (a[sortKey] > b[sortKey]) {
+            return isSortedAsc ? -1 : 1;
+         }
+         return 0;
+      });
+
+      if (isSortedAsc) {
+         this.classList.remove("sorted-asc");
+         this.classList.add("sorted-desc");
+         this.children[0].className = "fas fa-sort-down";
+      } else {
+         this.classList.remove("sorted-desc");
+         this.classList.add("sorted-asc");
+         this.children[0].className = "fas fa-sort-up";
+      }
       populateTable(users);
    });
 });

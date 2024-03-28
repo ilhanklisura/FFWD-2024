@@ -1,25 +1,4 @@
-table {
-   th {
-      cursor: pointer;
-      &:hover {
-         background-color: #f2f2f2;
-      }
-   }
-
-   tbody tr:hover {
-      background-color: #e9ecef;
-   }
-}
-
-.sorted-asc::after {
-   content: "\f0de";
-   font-family: "FontAwesome";
-}
-
-.sorted-desc::after {
-   content: "\f0dd";
-   font-family: "FontAwesome";
-}
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css";
 
 table {
    border-collapse: collapse;
@@ -30,6 +9,21 @@ table {
       border: 1px solid #ddd;
       padding: 8px;
       text-align: left;
+      position: relative;
+
+      &:hover {
+         background-color: #f2f2f2;
+      }
+
+      .fa-sort {
+         margin-left: 0.5rem;
+         visibility: visible;
+      }
+
+      &.sorted-asc .fa-sort-up,
+      &.sorted-desc .fa-sort-down {
+         visibility: visible;
+      }
    }
 
    .logo {
@@ -37,23 +31,6 @@ table {
       border-radius: 70%;
       margin-right: 5px;
       vertical-align: middle;
-   }
-
-   th {
-      cursor: pointer;
-      position: relative;
-
-      &:hover {
-         background-color: #f2f2f2;
-      }
-
-      &.sorted-asc::after,
-      &.sorted-desc::after {
-         position: absolute;
-         right: 8px;
-         top: 50%;
-         transform: translateY(-50%);
-      }
    }
 
    tbody tr:hover {
