@@ -2,493 +2,787 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Ilhan Klisura - Software Developer</title>
-
-      <!-- Favicons -->
-      <link href="images/favicon.png" rel="icon" />
-      <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
-
-      <!-- Montserrat Font-->
+      <title>Ilhan Klisura | Software Developer</title>
+      <link href="assets/images/favicon.png" rel="icon" />
+      <link rel="stylesheet" href="./assets/css/bootstrap.css" />
       <link
-         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
          rel="stylesheet"
       />
-      <!-- Material Icons -->
-      <link
-         href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-         rel="stylesheet"
-      />
-      <!-- Leaflet CSS -->
-      <link
-         href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-         rel="stylesheet"
-      />
-      <!-- Bootstrap CSS -->
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-      />
-      <!-- Custom CSS -->
-      <link rel="stylesheet" href="css/styles.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="./assets/css/styles.css" />
    </head>
-   <body>
-      <div class="container-fluid px-0">
-         <!-- Navbar -->
-         <nav class="navbar navbar-expand-lg navbar-light shadow">
-            <div class="container-fluid">
-               <a href="index.html" class="navbar-brand">
-                  <span class="material-icons-outlined"> code_off </span>
-                  Ilhan Klisura
-               </a>
-               <button
-                  type="button"
-                  class="navbar-toggler"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle Navigation"
-               >
-                  <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="container px-3">
-                  <div
-                     class="collapse navbar-collapse"
-                     id="navbarSupportedContent"
+   <body data-bs-spy="scroll" data-bs-target=".navbar">
+      <nav class="navbar navbar-expand-lg py-4 fixed-top navbar-light bg-body">
+         <div class="container">
+            <a class="navbar-brand" href="#"
+               ><h4 class="fw-bold">Ilhan Klisura.</h4></a
+            >
+            <button
+               class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarColor03"
+               aria-controls="navbarColor03"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#work">Work</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#resume">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#testimonials">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <div id="home" class="section-padding divider">
+         <div class="container">
+            <div class="row gy-4 align-items-center">
+               <div class="col-lg-5">
+                  <img
+                     data-aos="fade-down"
+                     data-aos-delay="200"
+                     src="./assets/images/home-img.jpg"
+                     class="img-fluid"
+                     alt="bla"
+                  />
+               </div>
+               <div class="col-lg-6">
+                  <h1 class="fw-bold display-4" data-aos="fade-up">
+                     Hi! I'm Ilhan,<br />
+                     <span class="text-info">a software developer.</span>
+                  </h1>
+                  <p data-aos="fade-up" data-aos-delay="200">
+                     I specialize in building web applications using HTML/CSS
+                     (Bootstrap & Tailwind CSS), JavaScript (Vue.js and
+                     React.js) and PHP (Laravel and FlightPHP). Scroll down to
+                     see what I have been working on.
+                  </p>
+                  <a
+                     data-aos="fade-up"
+                     data-aos-delay="300"
+                     href="#work"
+                     class="btn btn-outline-info me-3"
+                     >My Work</a
                   >
-                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item">
-                           <a class="nav-link me-lg-3" href="index.html"
-                              >Home</a
-                           >
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link me-lg-3" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link me-lg-3" href="#projects"
-                              >Projects</a
-                           >
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link me-lg-3" href="#testimonials"
-                              >Testimonials</a
-                           >
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link me-lg-3" href="#contact"
-                              >Contact</a
-                           >
-                        </li>
-                     </ul>
-                  </div>
+                  <a
+                     data-aos="fade-up"
+                     data-aos-delay="400"
+                     href="#contact"
+                     class="btn btn-info"
+                     >Contact Me</a
+                  >
                </div>
             </div>
-         </nav>
-         <!-- End Navbar -->
-
-         <!-- Hero -->
-         <header class="bg-light py-5">
-            <div class="container px-5">
-               <div class="row align-items-center">
-                  <div class="col-lg-8 col-xl-7 col-xxl-6">
-                     <div class="my-5">
-                        <h2 class="text-center fw-bold mb-2">
-                           Hi! I am Ilhan,
-                        </h2>
-                        <h2 class="text-danger text-center fw-bold mb-2">
-                           a software developer!
-                        </h2>
-                        <p class="text-center lead text-muted mb-4">
-                           I specialize in building web applications using
-                           HTML/CSS (Bootstrap & Tailwind CSS), JavaScript
-                           (Vue.js) and PHP (Laravel and FlightPHP). Scroll down
-                           to see what I have been working on.
-                        </p>
-                        <div
-                           class="d-grid gap-3 d-sm-flex justify-content-center"
-                        >
-                           <a
-                              class="btn btn-danger btn-large text-uppercase"
-                              href="#about"
-                           >
-                              Learn More
-                              <span class="material-icons-outlined ms-2"
-                                 >help_outline</span
-                              >
-                           </a>
-                           <a
-                              class="btn btn-outline-danger btn-large text-uppercase"
-                              href="#projects"
-                           >
-                              <span class="material-icons-outlined ms-2"
-                                 >manage_search</span
-                              >
-                              View My Work
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-5 col-xxl-6 justify-content-center">
-                     <img
-                        class="img-fluid rounded-circle"
-                        src="images/IlhanPicture.jpg"
-                        alt="Hero Image"
-                     />
-                  </div>
-               </div>
-            </div>
-         </header>
-         <!-- End Hero -->
-
-         <main>
-            <!-- About -->
-            <section id="about" class="text-center py-5">
-               <div class="container py-5">
-                  <div class="row justify-content-center">
-                     <h2 class="fw-bold">About</h2>
-                     <p class="lead text-muted mb-5">
-                        I am a software developer who builds elegant, fast, and
-                        scalable web applications.
-                     </p>
-                  </div>
-               </div>
-               <div class="container mb-5">
-                  <div class="row">
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="d-flex mb-5 about">
-                           <span
-                              class="material-icons-outlined m-auto text-danger"
-                           >
-                              design_services
-                           </span>
-                        </div>
-                        <h5>Design</h5>
-                        <p class="text-muted mb-0">
-                           I create beautiful, modern designs optimized for
-                           multiple color modes (light and dark themes).
-                        </p>
-                     </div>
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="d-flex mb-5 about">
-                           <span
-                              class="material-icons-outlined m-auto text-danger"
-                              >code</span
-                           >
-                        </div>
-                        <h5>Development</h5>
-                        <p class="text-muted mb-0">
-                           I develop responsive, scalable, and fast applications
-                           using the best standards and coding practices.
-                        </p>
-                     </div>
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="d-flex mb-5 about">
-                           <span
-                              class="material-icons-outlined m-auto text-danger"
-                              >settings</span
-                           >
-                        </div>
-                        <h5>Launch & Maintenance</h5>
-                        <p class="text-muted mb-0">
-                           Once the application is ready, I will help you launch
-                           it and teach you how to update and maintain it.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- End About -->
-
-            <hr />
-
-            <!-- Projects -->
-            <section id="projects" class="text-center py-5">
-               <div class="container py-5">
-                  <div class="row justify-content-center">
-                     <h2 class="fw-bold">Projects</h2>
-                     <p class="lead text-muted mb-5">
-                        View some of my latest projects
-                     </p>
-                  </div>
-               </div>
-               <div class="container mb-5">
-                  <div class="row">
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="card h-100 shadow-lg border-0 bg-light">
-                           <img
-                              class="card-img-top"
-                              src="images/portfolio-1.jpg"
-                              alt="Project 1"
-                           />
-                           <div class="card-body p-4">
-                              <h5 class="card-title mb-3">IPI d.o.o. Zenica</h5>
-                              <div class="mb-2">
-                                 <div class="badge bg-danger rounded-pill">
-                                    WordPress
-                                 </div>
-                                 <div class="badge bg-danger rounded-pill">
-                                    Figma
-                                 </div>
-                                 <div class="badge bg-danger rounded-pill">
-                                    UI/UX
-                                 </div>
-                              </div>
-                              <p class="card-text">
-                                 A portfolio company website built using
-                                 WordPress and Figma for UI/UX.
-                              </p>
-                           </div>
-                           <div class="card-footer bg-transparent mb-3">
-                              <a
-                                 class="btn btn-outline-danger btn-sm text-uppercase"
-                                 href="https://ipi.ba/"
-                                 target="_blank"
-                              >
-                                 <span class="material-icons-outlined me-1"
-                                    >code</span
-                                 >
-                                 Source Code
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="card h-100 shadow-lg border-0 bg-light">
-                           <img
-                              class="card-img-top"
-                              src="images/portfolio-2.jpg"
-                              alt="Project 2"
-                           />
-                           <div class="card-body p-4">
-                              <h5 class="card-title mb-3">Studio-A47</h5>
-                              <div class="mb-2">
-                                 <div class="badge bg-danger rounded-pill">
-                                    HTML/CSS
-                                 </div>
-                                 <div class="badge bg-danger rounded-pill">
-                                    Bootstrap
-                                 </div>
-                                 <div class="badge bg-danger rounded-pill">
-                                    SEO
-                                 </div>
-                              </div>
-                              <p class="card-text">
-                                 A architecture studio website built using
-                                 HTML&CSS, Bootstrap.
-                              </p>
-                           </div>
-                           <div class="card-footer bg-transparent mb-3">
-                              <a
-                                 class="btn btn-outline-danger btn-sm text-uppercase"
-                                 href="https://studio-a47.de/"
-                                 target="_blank"
-                              >
-                                 <span class="material-icons-outlined me-1"
-                                    >code</span
-                                 >
-                                 Source Code
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="card h-100 shadow-lg border-0 bg-light">
-                           <img
-                              class="card-img-top"
-                              src="images/portfolio-3.jpg"
-                              alt="Project 3"
-                           />
-                           <div class="card-body p-4">
-                              <h5 class="card-title mb-3">Softlite d.o.o.</h5>
-                              <div class="mb-2">
-                                 <div class="badge bg-danger rounded-pill">
-                                    Node.js
-                                 </div>
-                                 <div class="badge bg-danger rounded-pill">
-                                    React
-                                 </div>
-                                 <div class="badge bg-danger rounded-pill">
-                                    Material UI
-                                 </div>
-                              </div>
-                              <p class="card-text">
-                                 A startup company website built using Node.js,
-                                 Next.js 12 and Material UI 5 that uses a
-                                 PostgreSQL database to store data.
-                              </p>
-                           </div>
-                           <div class="card-footer bg-transparent mb-3">
-                              <a
-                                 class="btn btn-outline-danger btn-sm text-uppercase"
-                                 href="https://softlitebh.com"
-                                 target="_blank"
-                              >
-                                 <span class="material-icons-outlined me-1"
-                                    >code</span
-                                 >
-                                 Source Code
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- End Projects -->
-
-            <hr />
-
-            <!-- Testimonials -->
-            <section id="testimonials" class="text-center py-5">
-               <div class="container py-5">
-                  <div class="row justify-content-center">
-                     <h2 class="fw-bold">Testimonials</h2>
-                     <p class="lead text-muted mb-5">
-                        Check what clients have said about my work
-                     </p>
-                  </div>
-               </div>
-               <div class="container mb-5">
-                  <div class="row">
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="text-center fs-4 fst-italic mb-4 px-2">
-                           I had the pleasure of working alongside Ilhan Klisura
-                           on a complex web development project, and I was
-                           consistently impressed by his technical expertise and
-                           dedication. His ability to tackle intricate coding
-                           challenges and deliver high-quality, efficient code
-                           was truly remarkable. Ilhan Klisura is undoubtedly an
-                           asset to any software development team.
-                        </div>
-                        <div
-                           class="d-flex align-items-center justify-content-center testimonial"
-                        >
-                           <img
-                              class="rounded-circle me-3"
-                              src="images/testimonials-1.jpg"
-                              alt="User 1"
-                           />
-                           <div class="fw-bold">
-                              Edin Kovač
-                              <span class="text-danger mx-1">/</span>
-                              Founder & CEO, Studio-A47
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="text-center fs-4 fst-italic mb-4 px-2">
-                           I've had the pleasure of collaborating with Ilhan
-                           Klisura on multiple web development projects in BH
-                           Telecom, and his contributions have consistently
-                           exceeded expectations. His deep knowledge of web
-                           technologies, ability to meet tight deadlines, and
-                           excellent communication skills make him an invaluable
-                           member of any development team.
-                        </div>
-                        <div
-                           class="d-flex align-items-center justify-content-center testimonial"
-                        >
-                           <img
-                              class="rounded-circle me-3"
-                              src="images/testimonials-2.jpg"
-                              alt="User 2"
-                           />
-                           <div class="fw-bold">
-                              Dženana Meholjić
-                              <span class="text-danger mx-1">/</span>
-                              IT Manager, BH Telecom
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 mx-auto mb-5">
-                        <div class="text-center fs-4 fst-italic mb-4 px-2">
-                           I had the privilege of working with Ilhan on a
-                           critical web development project, and I was
-                           thoroughly impressed by his professionalism and
-                           technical prowess. Him not only delivered
-                           high-quality code but also provided valuable insights
-                           and recommendations that improved the project's
-                           overall success. I would endorse him for any software
-                           dev position.
-                        </div>
-                        <div
-                           class="d-flex align-items-center justify-content-center testimonial"
-                        >
-                           <img
-                              class="rounded-circle me-3"
-                              src="images/testimonials-3.jpg"
-                              alt="User 3"
-                           />
-                           <div class="fw-bold">
-                              Maid Oruč
-                              <span class="text-danger mx-1">/</span>
-                              Executive Director, Inpek-Ze
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- End Testimonials -->
-
-            <hr />
-
-            <!-- Contact -->
-            <section id="contact" class="text-center py-5">
-               <div class="container py-5">
-                  <div class="row justify-content-center">
-                     <h2 class="fw-bold">Contact</h2>
-                     <p class="lead text-muted mb-5">
-                        Do you need a software developer? I would love to hear
-                        from you.
-                     </p>
-                  </div>
-               </div>
-               <div class="container mb-5">
-                  <div class="row">
-                     <div class="col-xl-5 col-xxl-6 mb-5">
-                        <div id="map"></div>
-                     </div>
-                     <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5">
-                        <div class="mb-5">
-                           <h6 class="text-uppercase mb-2">Address</h6>
-                           <p class="lead mb-0">
-                              Džemala Bijedića 279F (Naselje Bulevar)
-                           </p>
-                        </div>
-                        <div class="mb-5">
-                           <h6 class="text-uppercase mb-2">Phone</h6>
-                           <p class="lead mb-0">+387 61 389 028</p>
-                        </div>
-                        <div class="mb-5">
-                           <h6 class="text-uppercase mb-2">Email</h6>
-                           <p class="lead mb-0">work@ilhanklisura.com</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- End Contact -->
-         </main>
+         </div>
       </div>
 
-      <hr />
+      <div id="services" class="section-padding divider">
+         <div class="container">
+            <div class="row">
+               <div class="col-12" data-aos="fade-up">
+                  <div class="intro-section text-center mb-5">
+                     <h1 class="fw-bold">My Services</h1>
+                     <p class="mx-auto">
+                        Discover how I can elevate your project with my expert
+                        services in web development, design, and digital
+                        strategy
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row gy-4">
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+               >
+                  <div class="service border-hover p-4 shadow rounded-5">
+                     <div class="icon rounded-4">
+                        <i class="ri-collage-fill"></i>
+                     </div>
+                     <h5 class="mt-4 fw-bold">Web Design</h5>
+                     <p class="mb-0">
+                        Crafting visually stunning and user-friendly websites
+                        that captivate and engage your audience
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+               >
+                  <div class="service border-hover p-4 shadow rounded-5">
+                     <div class="icon rounded-4">
+                        <i class="ri-code-box-fill"></i>
+                     </div>
+                     <h5 class="mt-4 fw-bold">Web Development</h5>
+                     <p class="mb-0">
+                        Building robust and scalable websites with cutting-edge
+                        technologies to enhance your online presence
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+               >
+                  <div class="service border-hover p-4 shadow rounded-5">
+                     <div class="icon rounded-4" style="display: inline-block">
+                        <i class="ri-android-fill"></i>
+                     </div>
+                     <div class="icon rounded-4" style="display: inline-block">
+                        <i class="ri-app-store-fill"></i>
+                     </div>
+                     <h5 class="mt-4 fw-bold">Mobile Development</h5>
+                     <p class="mb-0">
+                        Creating intuitive and responsive mobile apps that
+                        deliver exceptional user experiences on any device
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+               >
+                  <div class="service border-hover p-4 shadow rounded-5">
+                     <div class="icon rounded-4">
+                        <i class="ri-settings-3-fill"></i>
+                     </div>
+                     <h5 class="mt-4 fw-bold">Launch & Maintenance</h5>
+                     <p class="mb-0">
+                        Seamlessly launching your digital projects and ensuring
+                        their long-term success with ongoing maintenance and
+                        support
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+               >
+                  <div class="service border-hover p-4 shadow rounded-5">
+                     <div class="icon rounded-4">
+                        <i class="ri-line-chart-fill"></i>
+                     </div>
+                     <h5 class="mt-4 fw-bold">SEO Analytics</h5>
+                     <p class="mb-0">
+                        Utilizing advanced SEO analytics to improve your
+                        website's visibility and drive targeted traffic for
+                        better conversion rates
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+               >
+                  <div class="service border-hover p-4 shadow rounded-5">
+                     <div class="icon rounded-4">
+                        <i class="ri-emotion-laugh-fill"></i>
+                     </div>
+                     <h5 class="mt-4 fw-bold">Healthy Customer Service</h5>
+                     <p class="mb-0">
+                        Providing attentive and health-conscious customer
+                        service to ensure the well-being and satisfaction of our
+                        clients
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="work" class="section-padding divider">
+         <div class="container">
+            <div class="row">
+               <div class="col-12" data-aos="fade-up">
+                  <div class="intro-section text-center mb-5">
+                     <h1 class="fw-bold">My Work</h1>
+                     <p class="mx-auto">View some of my latest projects</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row gy-4">
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+               >
+                  <div class="p-4 border-hover shadow rounded-5">
+                     <img
+                        src="./assets/images/portfolio-1.jpg"
+                        class="img-fluid rounded-5 mb-3"
+                        alt=""
+                     />
+                     <span class="badge bg-info">WordPress</span>
+                     <span class="badge bg-info">Figma</span>
+                     <span class="badge bg-info">UI/UX</span>
+                     <a
+                        href="https://www.ipi.ba/"
+                        target="_blank"
+                        class="d-block mt-2"
+                        ><h5 class="fw-bold">IPI d.o.o. Zenica</h5></a
+                     >
+                     <p>
+                        A professional institution with the authority of FBiH
+                        Government to supervise work of authorized technical
+                        inspection stations in the FBiH.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+               >
+                  <div class="p-4 border-hover shadow rounded-5">
+                     <img
+                        src="./assets/images/portfolio-2.jpg"
+                        class="img-fluid rounded-5 mb-3"
+                        alt=""
+                     />
+                     <span class="badge bg-info">HTML/CSS</span>
+                     <span class="badge bg-info">Bootstrap</span>
+                     <span class="badge bg-info">SEO</span>
+                     <a
+                        href="https://www.studio-a47.de/"
+                        target="_blank"
+                        class="d-block mt-2"
+                        ><h5 class="fw-bold">Studio-A47</h5></a
+                     >
+                     <p>
+                        An architecture company website built using HTML/CSS and
+                        Bootstrap 5 with SEO Analytics. My first big project
+                        that I worked on.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+               >
+                  <div class="p-4 border-hover shadow rounded-5">
+                     <img
+                        src="./assets/images/portfolio-3.jpg"
+                        class="img-fluid rounded-5 mb-3"
+                        alt=""
+                     />
+                     <span class="badge bg-info">React.js</span>
+                     <span class="badge bg-info">Next.js</span>
+                     <span class="badge bg-info">Tailwind CSS</span>
+                     <a
+                        href="https://www.softlitebh.com/"
+                        target="_blank"
+                        class="d-block mt-2"
+                        ><h5 class="fw-bold">Softlite d.o.o.</h5></a
+                     >
+                     <p>
+                        A startup company website built using Node.js, Next.js
+                        12 and Material UI 5 that uses a PostgreSQL database to
+                        store data.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+               ></div>
+            </div>
+         </div>
+      </div>
+
+      <div id="resume" class="section-padding divider">
+         <div class="container">
+            <div class="row">
+               <div class="col-12" data-aos="fade-up">
+                  <div class="intro-section text-center mb-5">
+                     <h1 class="fw-bold">My Resume</h1>
+                     <p class="mx-auto">
+                        Explore my professional journey and discover how my
+                        skills, experience, and accomplishments can contribute
+                        to the success of your projects
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div
+               class="row gx-0 gy-4 p-5 border-hover rounded-5 shadow"
+               data-aos="fade-up"
+               data-aos-delay="200"
+            >
+               <div class="col-md-3"><h3>Orbicode d.o.o.</h3></div>
+               <div class="col-md-3">
+                  <h5>Junior Software Developer</h5>
+                  <small class="text-info">Oct 2023 - Ongoing</small>
+               </div>
+               <div class="col-md-6">
+                  <p class="mb-0">
+                     Develop and maintain responsive and user-friendly web
+                     applications, ensuring optimal performance and
+                     compatibility across various browsers and devices.
+                  </p>
+               </div>
+            </div>
+
+            <div
+               class="row mt-4 gx-0 gy-4 p-5 border-hover rounded-5 shadow"
+               data-aos="fade-up"
+               data-aos-delay="300"
+            >
+               <div class="col-md-3">
+                  <h3>BH Telecom d.d.</h3>
+               </div>
+               <div class="col-md-3">
+                  <h5>Software Engineer Intern</h5>
+                  <small class="text-info">Aug 2023 - Oct 2023</small>
+               </div>
+               <div class="col-md-6">
+                  <p class="mb-0">
+                     As an intern, I contributed to various projects using
+                     React.js, Java, Spring Boot, and MySQL, collaborated with
+                     team, and enhanced my skills.
+                  </p>
+               </div>
+            </div>
+
+            <div
+               class="row mt-4 gx-0 gy-4 p-5 border-hover rounded-5 shadow"
+               data-aos="fade-up"
+               data-aos-delay="400"
+            >
+               <div class="col-md-3">
+                  <h3>IPI d.o.o.</h3>
+               </div>
+               <div class="col-md-3">
+                  <h5>Web Developer</h5>
+                  <small class="text-info">Contract (3 Months)</small>
+               </div>
+               <div class="col-md-6">
+                  <p class="mb-0">
+                     Developed a custom WordPress website and implemented
+                     responsive web design techniques to ensure seamless user
+                     experiences across devices.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="section-padding">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12" data-aos="fade-up">
+                     <div class="intro-section text-center mb-5">
+                        <h1 class="fw-bold">My Skills</h1>
+                        <p class="mx-auto">
+                           Discover my expertise in advanced technologies,
+                           innovative problem-solving, and successful
+                           collaboration on diverse projects
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row g-md-5 g-4">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                     <div class="row gy-4">
+                        <div class="col-12">
+                           <div>
+                              <h5 class="small">HTML & CSS</h5>
+                              <div class="progress">
+                                 <div
+                                    class="progress-bar bg-info"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    style="width: 100%"
+                                    aria-valuenow="100"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                 >
+                                    100%
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div>
+                              <h5 class="small">Vue.js</h5>
+                              <div class="progress">
+                                 <div
+                                    class="progress-bar bg-info"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    style="width: 90%"
+                                    aria-valuenow="90"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                 >
+                                    90%
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div>
+                              <h5 class="small">PHP (Laravel)</h5>
+                              <div class="progress">
+                                 <div
+                                    class="progress-bar bg-info"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    style="width: 80%"
+                                    aria-valuenow="80"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                 >
+                                    80%
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                     <div class="row gy-4">
+                        <div class="col-12">
+                           <div>
+                              <h5 class="small">C# (ASP.NET)</h5>
+                              <div class="progress">
+                                 <div
+                                    class="progress-bar bg-info"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    style="width: 75%"
+                                    aria-valuenow="75"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                 >
+                                    75%
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div>
+                              <h5 class="small">MySQL</h5>
+                              <div class="progress">
+                                 <div
+                                    class="progress-bar bg-info"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    style="width: 80%"
+                                    aria-valuenow="80"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                 >
+                                    80%
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12">
+                           <div>
+                              <h5 class="small">Java</h5>
+                              <div class="progress">
+                                 <div
+                                    class="progress-bar bg-info"
+                                    role="progressbar"
+                                    aria-label="Example with label"
+                                    style="width: 50%"
+                                    aria-valuenow="50"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                 >
+                                    50%
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="testimonials" class="section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-12" data-aos="fade-up">
+                  <div class="intro-section text-center mb-5">
+                     <h1 class="fw-bold">Client Experiences</h1>
+                     <p class="mx-auto">
+                        Explore authentic stories and feedback from our clients,
+                        showcasing their experiences and the impactful results
+                        achieved through our partnership
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row g-4">
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+               >
+                  <div class="p-4 border-hover shadow rounded-5">
+                     <div class="text-info">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                        ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                        ><i class="ri-star-fill"></i>
+                     </div>
+                     <p class="my-3">
+                        I had the pleasure of working alongside Ilhan Klisura on
+                        a complex web development project, and I was
+                        consistently impressed by his technical expertise and
+                        dedication. His ability to tackle intricate coding
+                        challenges and deliver high-quality, efficient code was
+                        truly remarkable. Ilhan Klisura is undoubtedly an asset
+                        to any software development team
+                     </p>
+                     <div class="d-flex align-items-center">
+                        <img
+                           src="./assets/images/testimonials-1.jpg"
+                           class="rounded-4"
+                           alt=""
+                        />
+                        <div class="ms-3">
+                           <h5 class="fw-bold mb-1">Edin Kovač</h5>
+                           <small class="text-info">Founder, Studio-A47</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+               >
+                  <div class="p-4 border-hover shadow rounded-5">
+                     <div class="text-info">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                        ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                        ><i class="ri-star-fill"></i>
+                     </div>
+                     <p class="my-3">
+                        I've had the pleasure of collaborating with Ilhan
+                        Klisura on multiple web development projects in BH
+                        Telecom, and his contributions have consistently
+                        exceeded expectations. His deep knowledge of web
+                        technologies, ability to meet tight deadlines, and
+                        excellent communication skills make him an invaluable
+                        member of any development team
+                     </p>
+                     <div class="d-flex align-items-center">
+                        <img
+                           src="./assets/images/testimonials-2.jpg"
+                           class="rounded-4"
+                           alt=""
+                        />
+                        <div class="ms-3">
+                           <h5 class="fw-bold mb-1">Dženana Meholjić</h5>
+                           <small class="text-info"
+                              >IT Manager, BH Telecom</small
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+               >
+                  <div class="p-4 border-hover shadow rounded-5">
+                     <div class="text-info">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                        ><i class="ri-star-fill"></i><i class="ri-star-fill"></i
+                        ><i class="ri-star-fill"></i>
+                     </div>
+                     <p class="my-3">
+                        I had the privilege of working with Ilhan on a critical
+                        web development project, and I was thoroughly impressed
+                        by his professionalism and technical prowess. Him not
+                        only delivered high-quality code but also provided
+                        valuable insights and recommendations that improved the
+                        project's overall success. I would endorse him for any
+                        software dev position
+                     </p>
+                     <div class="d-flex align-items-center">
+                        <img
+                           src="./assets/images/testimonials-3.jpg"
+                           class="rounded-4"
+                           alt=""
+                        />
+                        <div class="ms-3">
+                           <h5 class="fw-bold mb-1">Maid Oruč</h5>
+                           <small class="text-info"
+                              >Executive Director, Inpek-Ze</small
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div data-aos="fade-up">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div
+                     class="intro-section text-center mb-5 section-padding bg-info rounded-5 text-white"
+                  >
+                     <h1 class="fw-bold text-white">
+                        Have a business or project idea?
+                     </h1>
+                     <p class="mx-auto">
+                        Let's bring it to life! I specialize in turning visions
+                        into reality, offering tailored solutions and expert
+                        guidance every step of the way. Share your aspirations
+                        with us, and let's create something extraordinary
+                        together!
+                     </p>
+                     <a href="#contact" class="btn btn-outline-info"
+                        >Get Started</a
+                     >
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="contact" class="section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-12" data-aos="fade-up">
+                  <div class="intro-section text-center mb-5">
+                     <h1 class="fw-bold">Contact Me</h1>
+                     <p class="mx-auto">
+                        Interested in collaborating or have questions?
+                        <br />Reach out to discuss how we can work together to
+                        achieve your goals!
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div
+               class="row justify-content-center"
+               data-aos="fade-up"
+               data-aos-delay="200"
+            >
+               <div class="col-md-8">
+                  <form action="#" class="row g-3">
+                     <div class="form-group col-md-6">
+                        <input
+                           type="text"
+                           class="form-control"
+                           placeholder="Enter Name"
+                        />
+                     </div>
+                     <div class="form-group col-md-6">
+                        <input
+                           type="email"
+                           class="form-control"
+                           placeholder="Enter Email"
+                        />
+                     </div>
+                     <div class="form-group col-md-12">
+                        <input
+                           type="text"
+                           class="form-control"
+                           placeholder="Enter Subject"
+                        />
+                     </div>
+                     <div class="form-group col-md-12">
+                        <textarea
+                           name=""
+                           class="form-control"
+                           rows="5"
+                           placeholder="Enter Message"
+                        ></textarea>
+                     </div>
+                     <div class="row g-2">
+                        <button type="submit" class="btn btn-outline-info">
+                           Send Message
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <!-- Footer -->
-      <footer class="text-center py-4">
-         <div class="container px-5 mb-2">
-            Copyright &copy; 2024 Klisura Ilhan.
+      <footer class="py-5 bg-info text-white">
+         <div class="container">
+            <div class="row align-items-center justify-content-between">
+               <div class="col-md-6">
+                  <p class="mb-0">
+                     Copyright @
+                     <a href="#" class="text-white">Klisura Ilhan.</a>
+                  </p>
+               </div>
+               <div class="col-auto text-end">
+                  <a
+                     href="https://twitter.com/IlhanKlisura"
+                     target="_blank"
+                     class="btn btn-outline-info ms-2 btn-icon"
+                     ><i class="ri-twitter-fill"></i
+                  ></a>
+                  <a
+                     href="mailto:work@ilhanklisura.com"
+                     target="_blank"
+                     class="btn btn-outline-info ms-2 btn-icon"
+                     ><i class="ri-mail-send-fill"></i
+                  ></a>
+                  <a
+                     href="https://instagram.com/softlitebh"
+                     target="_blank"
+                     class="btn btn-outline-info ms-2 btn-icon"
+                     ><i class="ri-instagram-fill"></i
+                  ></a>
+                  <a
+                     href="https://github.com/ilhanklisura"
+                     target="_blank"
+                     class="btn btn-outline-info ms-2 btn-icon"
+                     ><i class="ri-github-fill"></i
+                  ></a>
+               </div>
+            </div>
          </div>
       </footer>
-      <!-- End Footer -->
 
-      <!-- Leaflet JS -->
-      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-      <!-- Bootstrap JS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- Custom JS -->
-      <script src="js/scripts.js"></script>
+      <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="./assets/js/app.js"></script>
    </body>
 </html>

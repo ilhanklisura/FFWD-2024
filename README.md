@@ -16,6 +16,7 @@ The first project is a personal portfolio website designed to showcase an unders
 -  CSS
 -  Sass
 -  Bootstrap
+-  JavaScript
 
 #### Key Features
 
@@ -25,15 +26,19 @@ The first project is a personal portfolio website designed to showcase an unders
 -  Utilization of semantic HTML5 tags.
 -  Styling with CSS and Sass, including animations.
 -  Implementation of Bootstrap components (cards, carousel, modals).
+-  Utilization of JavaScript scroll animations.
 -  Responsive design for various devices.
 
 #### Project Structure
 
 -  `index.html`: Main content.
--  `contact.html`: Contact form page.
--  `about.html`: Optional page for personal information.
+-  `#services`: Page for personal information.
+-  `#work`: Page for latest work.
+-  `#resume`: Page for real company work experience.
+-  `#testimonials`: Page for customer experience.
+-  `#contact`: Contact form page.
 -  `css/`: Compiled CSS files.
--  `scss/`: Sass files.
+-  `js/`: JS files.
 -  `images/`: Project images.
 
 #### How to Run
