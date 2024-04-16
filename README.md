@@ -84,21 +84,21 @@ This application aims to enhance the online culinary experience by providing an 
 
 #### Project Structure
 
-```
+```plaintext
 .
-├── index.html         # Main entry point of the application
-├── css/               # Directory for CSS stylesheets
-│   ├── style.css      # Main stylesheet for the application
-├── js/                # JavaScript files
-│   ├── main.js        # Main JavaScript functionality
-│   ├── jquery.min.js  # jQuery library
-├── tpl/               # Templates for spapp pages
-│   ├── home.html      # Home page template
-│   ├── search.html    # Search page template
-│   ├── favorites.html # Favorites page template
-│   ├── details.html   # Recipe details page template
-│   ├── about.html     # About Us page template
-├── images/            # Storage for image files used in the application
+├── index.html        # Main entry point of the application
+├── css/              # Directory for CSS stylesheets
+│   ├── style.css     # Main stylesheet for the application
+├── js/               # JavaScript files
+│   ├── main.js       # Main JavaScript functionality
+│   ├── jquery.min.js # jQuery library
+├── tpl/              # Templates for spapp pages
+│   ├── home.html     # Home page template
+│   ├── search.html   # Search page template
+│   ├── favorites.html# Favorites page template
+│   ├── details.html  # Recipe details page template
+│   ├── about.html    # About Us page template
+├── images/           # Storage for image files used in the application
 ```
 
 #### How to Run
