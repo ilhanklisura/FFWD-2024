@@ -31,15 +31,18 @@ The first project is a personal portfolio website designed to showcase an unders
 
 #### Project Structure
 
--  `index.html`: Main content.
--  `#services`: Page for personal information.
--  `#work`: Page for latest work.
--  `#resume`: Page for real company work experience.
--  `#testimonials`: Page for customer experience.
--  `#contact`: Contact form page.
--  `css/`: Compiled CSS files.
--  `js/`: JS files.
--  `images/`: Project images.
+```plaintext
+├── index.html        # Main content
+│   ├── #services     # Page for personal information.
+│   ├── #work         # Page for latest work.
+│   ├── #resume       # Page for real company work experience.
+│   ├── #testimonials # Page for customer experience.
+│   ├── #contact      # Contact form page.
+├── assets/           # Assets folder.
+│   ├── css/          # CSS files.
+│   ├── js/           # JavaScript files.
+│   ├── images/       # Storage for image files used in the application
+```
 
 #### How to Run
 
