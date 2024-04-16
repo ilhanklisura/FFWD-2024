@@ -51,13 +51,13 @@ The first project is a personal portfolio website designed to showcase an unders
 -  Optimize images for faster loading.
 -  Test the website on different browsers.
 
-## Project 2: Online Learning Platform
+## Project 2: Recipe Finder Application
 
-### Theme: Online Learning Platform
+### Theme: Hana's Cousine
 
 #### Project Overview
 
-The second project focuses on building an online learning platform. It includes interactive features like an image gallery, content toggling, theme switching, smooth scrolling, form auto-save, advanced form validation, live validation feedback, data-driven content loading, form submission with AJAX, external API integration, and notifications.
+This application aims to enhance the online culinary experience by providing an easy-to-use platform where users can search for recipes, view high-quality images, and interact with dynamic content. The design focuses on user engagement and seamless functionality through various frontend technologies.
 
 #### Technologies Used
 
@@ -70,22 +70,36 @@ The second project focuses on building an online learning platform. It includes 
 
 #### Key Features
 
--  Interactive image gallery and content toggling.
--  Theme switcher for color schemes and font sizes.
--  Smooth scrolling and accordion menu.
--  Form auto-save and advanced form validation.
--  Live validation feedback.
--  Data-driven content loading via JSON and XML files.
--  Form submission with AJAX.
--  External API integration with error handling.
--  Toast messages for notifications.
+- **Interactive Image Gallery**: Users can view and interact with high-quality images of recipes, clicking through to see details.
+- **Content Toggling**: Toggle visibility of detailed content to streamline user experience.
+- **Theme Switcher**: Users can switch between color schemes and adjust font sizes for personalized viewing.
+- **Smooth Scrolling**: Enhances navigation through long lists or pages.
+- **Accordion Menu**: For a structured display of categories or sections.
+- **Form Auto-Save**: Protects user input by saving data as it is entered.
+- **Advanced Form Validation with Live Feedback**: Ensures the validity of user inputs before submission.
+- **Data-Driven Content Loading**: Dynamically loads recipe data using JSON and XML via AJAX.
+- **AJAX Form Submission**: Provides seamless form submission experience without reloading the page.
+- **External API Integration**: Incorporates data from external sources, equipped with error handling.
+- **Notifications**: Utilizes toast messages to inform users of actions, changes, or errors.
 
 #### Project Structure
 
--  `index.html`: Main content.
--  `css/`: CSS files.
--  `js/`: JavaScript and jQuery files.
--  `images/`: Project images.
+```
+.
+├── index.html         # Main entry point of the application
+├── css/               # Directory for CSS stylesheets
+│   ├── style.css      # Main stylesheet for the application
+├── js/                # JavaScript files
+│   ├── main.js        # Main JavaScript functionality
+│   ├── jquery.min.js  # jQuery library
+├── tpl/               # Templates for spapp pages
+│   ├── home.html      # Home page template
+│   ├── search.html    # Search page template
+│   ├── favorites.html # Favorites page template
+│   ├── details.html   # Recipe details page template
+│   ├── about.html     # About Us page template
+├── images/            # Storage for image files used in the application
+```
 
 #### How to Run
 
