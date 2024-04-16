@@ -111,41 +111,57 @@ This application aims to enhance the online culinary experience by providing an 
 -  Regularly check for console errors.
 -  Thoroughly test interactive features.
 
-## Project 3: Portfolio and Blog Single Page Application
+## Project 3: Health and Wellness Tracker
 
-### Theme: Portfolio and Blog Single Page Application
+### Theme: VitaTrack
 
 #### Project Overview
 
-The third project involves building a Single Page Application (SPA) using ReactJS and styled with Material UI components. It showcases a portfolio, blog, or a simple e-commerce site, demonstrating proficiency in ReactJS, React Router, and Material UI.
+The Health and Wellness Tracker provides a user-friendly platform for individuals looking to improve their health and well-being. By allowing users to log daily activities and monitor their progress, this tool aims to motivate users towards healthier lifestyle choices through data visualization and reminders.
 
 #### Technologies Used
 
--  ReactJS
--  Material UI
--  React Router
+- **ReactJS**: For building the user interface.
+- **Material UI**: To style the application components and ensure a responsive, mobile-friendly design.
+- **React Router**: For seamless navigation within the single-page application without page reloads.
+- **Chart.js**: For generating interactive charts to visualize data.
 
 #### Key Features
 
--  Multiple sections/pages (Home, About, Portfolio/Posts, Contact).
--  Fully responsive design using Material UI's Grid system.
--  Functional components and React hooks (useState, useEffect).
--  React Router for seamless navigation.
--  Material UI components (Buttons, Cards, AppBar, Toolbars, Dialogs).
--  Custom theme using Material UI's theming capabilities.
--  Form with basic validation using React state.
+- **Daily Logs**: Users can log their daily meals, workout sessions, and sleep hours, providing a comprehensive overview of their health routines.
+- **Progress Reports**: The application will visualize progress with graphs and statistics, making it easy for users to understand their health trends over time.
+- **Custom Reminders**: Users can set custom reminders for health-related tasks such as taking medication, attending health checks, or scheduling workouts to ensure they stay on track.
 
 #### Project Structure
 
--  `src/`: React components and JavaScript files.
--  `public/`: Public assets.
--  `styles/`: Custom styles.
+```plaintext
+src/
+  ├── components/         # Reusable UI components
+  │   ├── Layout.js       # Common layout component
+  │   ├── Navbar.js       # Navigation bar
+  │   ├── Footer.js       # Footer component
+  ├── pages/              # React components for each page
+  │   ├── Dashboard.js    # Main dashboard page with charts
+  │   ├── Logs.js         # Page for entering daily logs
+  │   ├── Reminders.js    # Page to manage reminders
+  ├── hooks/              # Custom hooks for shared logic
+  ├── app.js              # Main React application component
+  ├── index.js            # Entry point for React application
+public/
+  ├── index.html          # HTML template
+  ├── favicon.ico         # Favicon
+styles/
+  ├── main.css            # Main stylesheet for custom styles
+```
 
 #### How to Run
 
-1. Clone the repository.
-2. Install dependencies (`npm install`).
-3. Start the development server (`npm start`).
+```
+git clone https://github.com/ilhanklisura/FFWD-2024.git
+cd health-wellness-tracker
+npm install
+npm start
+```
 
 #### Additional Notes
 
