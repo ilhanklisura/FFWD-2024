@@ -31,15 +31,18 @@ The first project is a personal portfolio website designed to showcase an unders
 
 #### Project Structure
 
--  `index.html`: Main content.
--  `#services`: Page for personal information.
--  `#work`: Page for latest work.
--  `#resume`: Page for real company work experience.
--  `#testimonials`: Page for customer experience.
--  `#contact`: Contact form page.
--  `css/`: Compiled CSS files.
--  `js/`: JS files.
--  `images/`: Project images.
+```plaintext
+├── index.html        # Main content
+│   ├── #services     # Page for personal information.
+│   ├── #work         # Page for latest work.
+│   ├── #resume       # Page for real company work experience.
+│   ├── #testimonials # Page for customer experience.
+│   ├── #contact      # Contact form page.
+├── assets/           # Assets folder.
+│   ├── css/          # CSS files.
+│   ├── js/           # JavaScript files.
+│   ├── images/       # Storage for image files used in the application
+```
 
 #### How to Run
 
@@ -51,13 +54,13 @@ The first project is a personal portfolio website designed to showcase an unders
 -  Optimize images for faster loading.
 -  Test the website on different browsers.
 
-## Project 2: Online Learning Platform
+## Project 2: Recipe Finder Application
 
-### Theme: Online Learning Platform
+### Theme: Hana's Cousine
 
 #### Project Overview
 
-The second project focuses on building an online learning platform. It includes interactive features like an image gallery, content toggling, theme switching, smooth scrolling, form auto-save, advanced form validation, live validation feedback, data-driven content loading, form submission with AJAX, external API integration, and notifications.
+This application aims to enhance the online culinary experience by providing an easy-to-use platform where users can search for recipes, view high-quality images, and interact with dynamic content. The design focuses on user engagement and seamless functionality through various frontend technologies.
 
 #### Technologies Used
 
@@ -70,22 +73,35 @@ The second project focuses on building an online learning platform. It includes 
 
 #### Key Features
 
--  Interactive image gallery and content toggling.
--  Theme switcher for color schemes and font sizes.
--  Smooth scrolling and accordion menu.
--  Form auto-save and advanced form validation.
--  Live validation feedback.
--  Data-driven content loading via JSON and XML files.
--  Form submission with AJAX.
--  External API integration with error handling.
--  Toast messages for notifications.
+- **Interactive Image Gallery**: Users can view and interact with high-quality images of recipes, clicking through to see details.
+- **Content Toggling**: Toggle visibility of detailed content to streamline user experience.
+- **Theme Switcher**: Users can switch between color schemes and adjust font sizes for personalized viewing.
+- **Smooth Scrolling**: Enhances navigation through long lists or pages.
+- **Accordion Menu**: For a structured display of categories or sections.
+- **Form Auto-Save**: Protects user input by saving data as it is entered.
+- **Advanced Form Validation with Live Feedback**: Ensures the validity of user inputs before submission.
+- **Data-Driven Content Loading**: Dynamically loads recipe data using JSON and XML via AJAX.
+- **AJAX Form Submission**: Provides seamless form submission experience without reloading the page.
+- **External API Integration**: Incorporates data from external sources, equipped with error handling.
+- **Notifications**: Utilizes toast messages to inform users of actions, changes, or errors.
 
 #### Project Structure
 
--  `index.html`: Main content.
--  `css/`: CSS files.
--  `js/`: JavaScript and jQuery files.
--  `images/`: Project images.
+```plaintext
+├── index.html        # Main entry point of the application
+├── css/              # Directory for CSS stylesheets
+│   ├── style.css     # Main stylesheet for the application
+├── js/               # JavaScript files
+│   ├── main.js       # Main JavaScript functionality
+│   ├── jquery.min.js # jQuery library
+├── tpl/              # Templates for spapp pages
+│   ├── home.html     # Home page template
+│   ├── search.html   # Search page template
+│   ├── favorites.html# Favorites page template
+│   ├── details.html  # Recipe details page template
+│   ├── about.html    # About Us page template
+├── images/           # Storage for image files used in the application
+```
 
 #### How to Run
 
@@ -97,41 +113,57 @@ The second project focuses on building an online learning platform. It includes 
 -  Regularly check for console errors.
 -  Thoroughly test interactive features.
 
-## Project 3: Portfolio and Blog Single Page Application
+## Project 3: Health and Wellness Tracker
 
-### Theme: Portfolio and Blog Single Page Application
+### Theme: VitaTrack
 
 #### Project Overview
 
-The third project involves building a Single Page Application (SPA) using ReactJS and styled with Material UI components. It showcases a portfolio, blog, or a simple e-commerce site, demonstrating proficiency in ReactJS, React Router, and Material UI.
+The Health and Wellness Tracker provides a user-friendly platform for individuals looking to improve their health and well-being. By allowing users to log daily activities and monitor their progress, this tool aims to motivate users towards healthier lifestyle choices through data visualization and reminders.
 
 #### Technologies Used
 
--  ReactJS
--  Material UI
--  React Router
+- **ReactJS**: For building the user interface.
+- **Material UI**: To style the application components and ensure a responsive, mobile-friendly design.
+- **React Router**: For seamless navigation within the single-page application without page reloads.
+- **Chart.js**: For generating interactive charts to visualize data.
 
 #### Key Features
 
--  Multiple sections/pages (Home, About, Portfolio/Posts, Contact).
--  Fully responsive design using Material UI's Grid system.
--  Functional components and React hooks (useState, useEffect).
--  React Router for seamless navigation.
--  Material UI components (Buttons, Cards, AppBar, Toolbars, Dialogs).
--  Custom theme using Material UI's theming capabilities.
--  Form with basic validation using React state.
+- **Daily Logs**: Users can log their daily meals, workout sessions, and sleep hours, providing a comprehensive overview of their health routines.
+- **Progress Reports**: The application will visualize progress with graphs and statistics, making it easy for users to understand their health trends over time.
+- **Custom Reminders**: Users can set custom reminders for health-related tasks such as taking medication, attending health checks, or scheduling workouts to ensure they stay on track.
 
 #### Project Structure
 
--  `src/`: React components and JavaScript files.
--  `public/`: Public assets.
--  `styles/`: Custom styles.
+```plaintext
+src/
+  ├── components/         # Reusable UI components
+  │   ├── Layout.js       # Common layout component
+  │   ├── Navbar.js       # Navigation bar
+  │   ├── Footer.js       # Footer component
+  ├── pages/              # React components for each page
+  │   ├── Dashboard.js    # Main dashboard page with charts
+  │   ├── Logs.js         # Page for entering daily logs
+  │   ├── Reminders.js    # Page to manage reminders
+  ├── hooks/              # Custom hooks for shared logic
+  ├── app.js              # Main React application component
+  ├── index.js            # Entry point for React application
+public/
+  ├── index.html          # HTML template
+  ├── favicon.ico         # Favicon
+styles/
+  ├── main.css            # Main stylesheet for custom styles
+```
 
 #### How to Run
 
-1. Clone the repository.
-2. Install dependencies (`npm install`).
-3. Start the development server (`npm start`).
+```
+git clone https://github.com/ilhanklisura/FFWD-2024.git
+cd health-wellness-tracker
+npm install
+npm start
+```
 
 #### Additional Notes
 
