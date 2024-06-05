@@ -1,0 +1,13 @@
+<h1>Home</h1>
+<p>Welcome to the home page!</p>
+<button id="viewMoreBtn">View More</button>
+
+<script>
+   $(document).ready(function () {
+      $("#viewMoreBtn").click(function () {
+         var data = "<p>Detailed information about the selected item.</p>";
+         localStorage.setItem("selectedData", data);
+         window.location.hash = "#view_more";
+      });
+   });
+</script>

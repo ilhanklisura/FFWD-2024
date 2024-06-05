@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Lab 12 - SPA</title>
+      <link rel="stylesheet" href="css/styles.css" />
+      <link rel="stylesheet" href="css/spapp.css" />
+   </head>
+   <body>
+      <script>
+         if (!UserService.isLoggedIn()) {
+            window.location.href = "#login";
+         }
+      </script>
+      <header>
+         <nav role="navigation">
+            <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+      <section id="pageContent">
+         <main id="spapp" role="main">
+            <section id="home" data-load="home.html"></section>
+            <section id="about" data-load="about.html"></section>
+            <section id="contact" data-load="contact.html"></section>
+            <section id="view_more" data-load="view-more.html"></section>
+            <section id="login" data-load="common/login.html"></section>
+         </main>
+      </section>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.spapp.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="services/user-service.js"></script>
+      <script src="js/login.js"></script>
+   </body>
+</html>
