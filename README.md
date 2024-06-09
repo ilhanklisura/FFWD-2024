@@ -73,17 +73,17 @@ This application aims to enhance the online culinary experience by providing an 
 
 #### Key Features
 
-- **Interactive Image Gallery**: Users can view and interact with high-quality images of recipes, clicking through to see details.
-- **Content Toggling**: Toggle visibility of detailed content to streamline user experience.
-- **Theme Switcher**: Users can switch between color schemes and adjust font sizes for personalized viewing.
-- **Smooth Scrolling**: Enhances navigation through long lists or pages.
-- **Accordion Menu**: For a structured display of categories or sections.
-- **Form Auto-Save**: Protects user input by saving data as it is entered.
-- **Advanced Form Validation with Live Feedback**: Ensures the validity of user inputs before submission.
-- **Data-Driven Content Loading**: Dynamically loads recipe data using JSON and XML via AJAX.
-- **AJAX Form Submission**: Provides seamless form submission experience without reloading the page.
-- **External API Integration**: Incorporates data from external sources, equipped with error handling.
-- **Notifications**: Utilizes toast messages to inform users of actions, changes, or errors.
+-  **Interactive Image Gallery**: Users can view and interact with high-quality images of recipes, clicking through to see details.
+-  **Content Toggling**: Toggle visibility of detailed content to streamline user experience.
+-  **Theme Switcher**: Users can switch between color schemes and adjust font sizes for personalized viewing.
+-  **Smooth Scrolling**: Enhances navigation through long lists or pages.
+-  **Accordion Menu**: For a structured display of categories or sections.
+-  **Form Auto-Save**: Protects user input by saving data as it is entered.
+-  **Advanced Form Validation with Live Feedback**: Ensures the validity of user inputs before submission.
+-  **Data-Driven Content Loading**: Dynamically loads recipe data using JSON and XML via AJAX.
+-  **AJAX Form Submission**: Provides seamless form submission experience without reloading the page.
+-  **External API Integration**: Incorporates data from external sources, equipped with error handling.
+-  **Notifications**: Utilizes toast messages to inform users of actions, changes, or errors.
 
 #### Project Structure
 
@@ -113,9 +113,9 @@ This application aims to enhance the online culinary experience by providing an 
 -  Regularly check for console errors.
 -  Thoroughly test interactive features.
 
-## Project 3: Health and Wellness Tracker
+## Project 3: Main Portfolio Website
 
-### Theme: VitaTrack
+### Theme: Ilhan Klisura
 
 #### Project Overview
 
@@ -123,16 +123,16 @@ The Health and Wellness Tracker provides a user-friendly platform for individual
 
 #### Technologies Used
 
-- **ReactJS**: For building the user interface.
-- **Material UI**: To style the application components and ensure a responsive, mobile-friendly design.
-- **React Router**: For seamless navigation within the single-page application without page reloads.
-- **Chart.js**: For generating interactive charts to visualize data.
+-  **ReactJS**: For building the user interface.
+-  **Material UI**: To style the application components and ensure a responsive, mobile-friendly design.
+-  **React Router**: For seamless navigation within the single-page application without page reloads.
+-  **Chart.js**: For generating interactive charts to visualize data.
 
 #### Key Features
 
-- **Daily Logs**: Users can log their daily meals, workout sessions, and sleep hours, providing a comprehensive overview of their health routines.
-- **Progress Reports**: The application will visualize progress with graphs and statistics, making it easy for users to understand their health trends over time.
-- **Custom Reminders**: Users can set custom reminders for health-related tasks such as taking medication, attending health checks, or scheduling workouts to ensure they stay on track.
+-  **Daily Logs**: Users can log their daily meals, workout sessions, and sleep hours, providing a comprehensive overview of their health routines.
+-  **Progress Reports**: The application will visualize progress with graphs and statistics, making it easy for users to understand their health trends over time.
+-  **Custom Reminders**: Users can set custom reminders for health-related tasks such as taking medication, attending health checks, or scheduling workouts to ensure they stay on track.
 
 #### Project Structure
 
