@@ -119,41 +119,50 @@ This application aims to enhance the online culinary experience by providing an 
 
 #### Project Overview
 
-The Health and Wellness Tracker provides a user-friendly platform for individuals looking to improve their health and well-being. By allowing users to log daily activities and monitor their progress, this tool aims to motivate users towards healthier lifestyle choices through data visualization and reminders.
+The Main Portfolio Website showcases the skills and projects of Ilhan Klisura, providing an interactive and professional platform to present work experience, skills, and projects. This project focuses on building a responsive and modern single-page application (SPA) using ReactJS and Material UI.
 
 #### Technologies Used
 
--  **ReactJS**: For building the user interface.
--  **Material UI**: To style the application components and ensure a responsive, mobile-friendly design.
--  **React Router**: For seamless navigation within the single-page application without page reloads.
--  **Chart.js**: For generating interactive charts to visualize data.
+- **ReactJS**: For building the user interface.
+- **Material UI**: To style the application components and ensure a responsive, mobile-friendly design.
+- **React Router**: For seamless navigation within the single-page application without page reloads.
+- **LocalStorage**: To persist user data across sessions.
 
 #### Key Features
 
--  **Daily Logs**: Users can log their daily meals, workout sessions, and sleep hours, providing a comprehensive overview of their health routines.
--  **Progress Reports**: The application will visualize progress with graphs and statistics, making it easy for users to understand their health trends over time.
--  **Custom Reminders**: Users can set custom reminders for health-related tasks such as taking medication, attending health checks, or scheduling workouts to ensure they stay on track.
+- **Responsive Design**: Ensures the application provides a seamless experience across devices.
+- **Dynamic Content**: Features dynamically loaded content such as posts, projects, and contact information.
+- **Reusable Components**: Utilizes reusable components for consistency and efficiency.
+- **Form Validation**: Implements form validation for the contact form.
+- **Google Maps Integration**: Displays the location on the contact page using Google Maps.
+- **Interactive Modals**: Uses modals for feedback and additional information.
 
 #### Project Structure
 
 ```plaintext
 src/
-  ├── components/         # Reusable UI components
-  │   ├── Layout.js       # Common layout component
-  │   ├── Navbar.js       # Navigation bar
-  │   ├── Footer.js       # Footer component
-  ├── pages/              # React components for each page
-  │   ├── Dashboard.js    # Main dashboard page with charts
-  │   ├── Logs.js         # Page for entering daily logs
-  │   ├── Reminders.js    # Page to manage reminders
-  ├── hooks/              # Custom hooks for shared logic
-  ├── app.js              # Main React application component
-  ├── index.js            # Entry point for React application
+  ├── assets/                      # Assets folder for images and other static files
+  ├── components/                  # Reusable UI components
+  │   ├── CustomButton.js          # Custom button component
+  │   ├── CustomCard.js            # Custom card component
+  │   ├── CustomTypography.js      # Custom typography component
+  │   ├── SkillsCard.js            # Custom skills component
+  │   ├── StarterCard.js           # Custom starter page component
+  │   ├── TestimonialsCard.js      # Custom testimonials component
+  │   ├── Footer.js                # Footer component
+  │   ├── Navbar.js                # Navigation bar
+  ├── pages/                       # React components for each page
+  │   ├── About.js                 # About page
+  │   ├── Contact.js               # Contact page
+  │   ├── Home.js                  # Home page
+  │   ├── Portfolio.js             # Portfolio page
+  │   ├── Posts.js                 # Posts page
+  ├── App.js                       # Main React application component
+  ├── index.js                     # Entry point for React application
+  ├── theme.js                     # Theme configuration for Material UI
 public/
-  ├── index.html          # HTML template
-  ├── favicon.ico         # Favicon
-styles/
-  ├── main.css            # Main stylesheet for custom styles
+  ├── index.html                   # HTML template
+  ├── favicon.ico                  # Favicon
 ```
 
 #### How to Run
