@@ -54,61 +54,81 @@ The first project is a personal portfolio website designed to showcase an unders
 -  Optimize images for faster loading.
 -  Test the website on different browsers.
 
-## Project 2: Recipe Finder Application
+## Project 2: Student Management System
 
-### Theme: Hana's Cousine
+### Project Overview
 
-#### Project Overview
+This application provides a comprehensive platform for managing student information. It allows administrators to view student lists, add new students, and visualize student data through charts. The design focuses on ease of use and seamless functionality, employing various frontend technologies to enhance user experience.
 
-This application aims to enhance the online culinary experience by providing an easy-to-use platform where users can search for recipes, view high-quality images, and interact with dynamic content. The design focuses on user engagement and seamless functionality through various frontend technologies.
-
-#### Technologies Used
+### Technologies Used
 
 -  HTML
 -  CSS
 -  JavaScript
 -  jQuery
 -  AJAX
--  External APIs
+-  DataTables
+-  Highcharts
+-  SPApp
 
-#### Key Features
+### Key Features
 
--  **Interactive Image Gallery**: Users can view and interact with high-quality images of recipes, clicking through to see details.
--  **Content Toggling**: Toggle visibility of detailed content to streamline user experience.
--  **Theme Switcher**: Users can switch between color schemes and adjust font sizes for personalized viewing.
--  **Smooth Scrolling**: Enhances navigation through long lists or pages.
--  **Accordion Menu**: For a structured display of categories or sections.
--  **Form Auto-Save**: Protects user input by saving data as it is entered.
--  **Advanced Form Validation with Live Feedback**: Ensures the validity of user inputs before submission.
--  **Data-Driven Content Loading**: Dynamically loads recipe data using JSON and XML via AJAX.
--  **AJAX Form Submission**: Provides seamless form submission experience without reloading the page.
--  **External API Integration**: Incorporates data from external sources, equipped with error handling.
--  **Notifications**: Utilizes toast messages to inform users of actions, changes, or errors.
+-  **Interactive Dashboard**: Provides an overview of student data with dynamic cards and summary information.
+-  **Student List with DataTables**: Displays a searchable, sortable table of students.
+-  **Add Student Form**: Allows administrators to add new students with validation.
+-  **Student Workflow Visualization**: Uses Highcharts to visualize student data and workflows.
+-  **AJAX Form Submission**: Adds students to the system without reloading the page.
+-  **LocalStorage Integration**: Saves and retrieves student data using localStorage.
+-  **Responsive Design**: Ensures compatibility across different devices and screen sizes.
 
-#### Project Structure
+### Project Structure
 
 ```plaintext
-├── index.html        # Main entry point of the application
-├── css/              # Directory for CSS stylesheets
-│   ├── style.css     # Main stylesheet for the application
-├── js/               # JavaScript files
-│   ├── main.js       # Main JavaScript functionality
-│   ├── jquery.min.js # jQuery library
-├── tpl/              # Templates for spapp pages
-│   ├── home.html     # Home page template
-│   ├── search.html   # Search page template
-│   ├── favorites.html# Favorites page template
-│   ├── details.html  # Recipe details page template
-│   ├── about.html    # About Us page template
-├── images/           # Storage for image files used in the application
+project-2/
+├── index.html               # Main entry point of the application
+├── assets/
+│   ├── css/
+│   │   ├── sb-admin-2.min.css
+│   │   └── spapp.css
+│   ├── img/
+│   │   ├── undraw_profile.svg
+│   │   ├── undraw_profile_1.svg
+│   │   ├── undraw_profile_2.svg
+│   │   ├── undraw_profile_3.svg
+│   │   └── undraw_rocket.svg
+│   └── js/
+│       ├── custom.js
+│       ├── jquery.spapp.js
+│       ├── jquery.spapp.min.js
+│       └── sb-admin-2.min.js
+├── data/
+│   ├── students.json
+│   └── users.json
+├── services/
+│   ├── student-service.js
+│   └── user-service.js
+├── tpl/
+│   ├── dashboard.html
+│   ├── students.html
+│   ├── student_add.html
+│   └── student_workflow.html
+├── utils/
+│   ├── constants.js
+│   ├── rest-client.js
+│   └── utils.js
+├── vendor/
+│   ├── bootstrap/
+│   ├── fontawesome-free/
+│   └── jquery/
+└── login.html
 ```
 
-#### How to Run
+### How to Run
 
 1. Clone the repository.
 2. Open `index.html` in a web browser.
 
-#### Additional Notes
+### Additional Notes
 
 -  Regularly check for console errors.
 -  Thoroughly test interactive features.
