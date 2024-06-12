@@ -1,0 +1,71 @@
+<div class="container-fluid">
+   <!-- Page Heading -->
+   <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h3 mb-0 text-gray-800">Add Student</h1>
+   </div>
+
+   <!-- Add Student Form -->
+   <div class="card shadow mb-4">
+      <div class="card-header py-3">
+         <h6 class="m-0 font-weight-bold text-primary">Add New Student</h6>
+      </div>
+      <div class="card-body">
+         <form id="addStudentForm">
+            <div class="form-group">
+               <label for="name">Name</label>
+               <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+               />
+            </div>
+            <div class="form-group">
+               <label for="email">Email</label>
+               <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+               />
+            </div>
+            <div class="form-group">
+               <label for="password">Password</label>
+               <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  required
+                  minlength="8"
+                  maxlength="20"
+               />
+            </div>
+            <button type="submit" class="btn btn-primary">Add Student</button>
+         </form>
+      </div>
+   </div>
+</div>
+
+<script type="text/javascript">
+   $(document).ready(function () {
+      $("#addStudentForm").submit(function (event) {
+         event.preventDefault();
+         addStudent();
+      });
+   });
+
+   function addStudent() {
+      let students = JSON.parse(localStorage.getItem("students")) || [];
+      let student = {
+         name: $("#name").val(),
+         email: $("#email").val(),
+         password: $("#password").val(),
+      };
+      students.push(student);
+      localStorage.setItem("students", JSON.stringify(students));
+      window.location.replace("index.html#students");
+   }
+</script>

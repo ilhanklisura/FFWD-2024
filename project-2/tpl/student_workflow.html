@@ -1,0 +1,190 @@
+<div class="container-fluid">
+   <!-- Page Heading -->
+   <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h3 mb-0 text-gray-800">Student Workflow</h1>
+   </div>
+   <!-- Highcharts -->
+   <div id="line"></div>
+   <div id="bars"></div>
+   <div id="pie_chart"></div>
+
+   <script type="text/javascript">
+      // Line chart for Enrollment Trends
+      Highcharts.chart("line", {
+         title: {
+            text: "Enrollment Trends by Year",
+         },
+         subtitle: {
+            text: "Source: Student Management System",
+         },
+         yAxis: {
+            title: {
+               text: "Number of Students",
+            },
+         },
+         xAxis: {
+            categories: ["2018", "2019", "2020", "2021", "2022", "2023"],
+         },
+         legend: {
+            layout: "vertical",
+            align: "right",
+            verticalAlign: "middle",
+         },
+         plotOptions: {
+            series: {
+               label: {
+                  connectorAllowed: false,
+               },
+               pointStart: 2018,
+            },
+         },
+         series: [
+            {
+               name: "New Enrollments",
+               data: [100, 150, 200, 180, 220, 250],
+            },
+            {
+               name: "Graduates",
+               data: [90, 130, 180, 170, 200, 230],
+            },
+            {
+               name: "Dropouts",
+               data: [10, 20, 15, 10, 20, 15],
+            },
+         ],
+         responsive: {
+            rules: [
+               {
+                  condition: {
+                     maxWidth: 500,
+                  },
+                  chartOptions: {
+                     legend: {
+                        layout: "horizontal",
+                        align: "center",
+                        verticalAlign: "bottom",
+                     },
+                  },
+               },
+            ],
+         },
+      });
+
+      // Bar chart for Academic Performance
+      Highcharts.chart("bars", {
+         chart: {
+            type: "column",
+         },
+         title: {
+            text: "Academic Performance by Grade",
+         },
+         xAxis: {
+            categories: ["A", "B", "C", "D", "F"],
+         },
+         yAxis: {
+            min: 0,
+            title: {
+               text: "Number of Students",
+            },
+            stackLabels: {
+               enabled: true,
+               style: {
+                  fontWeight: "bold",
+                  color:
+                     (Highcharts.theme && Highcharts.theme.textColor) || "gray",
+               },
+            },
+         },
+         legend: {
+            align: "right",
+            x: -30,
+            verticalAlign: "top",
+            y: 25,
+            floating: true,
+            backgroundColor:
+               (Highcharts.theme && Highcharts.theme.background2) || "white",
+            borderColor: "#CCC",
+            borderWidth: 1,
+            shadow: false,
+         },
+         tooltip: {
+            headerFormat: "<b>{point.x}</b><br/>",
+            pointFormat:
+               "{series.name}: {point.y}<br/>Total: {point.stackTotal}",
+         },
+         plotOptions: {
+            column: {
+               stacking: "normal",
+               dataLabels: {
+                  enabled: true,
+                  color:
+                     (Highcharts.theme && Highcharts.theme.dataLabelsColor) ||
+                     "white",
+               },
+            },
+         },
+         series: [
+            {
+               name: "Math",
+               data: [30, 50, 70, 20, 10],
+            },
+            {
+               name: "Science",
+               data: [40, 60, 50, 30, 20],
+            },
+            {
+               name: "English",
+               data: [35, 45, 65, 25, 15],
+            },
+         ],
+      });
+
+      // Pie chart for Student Participation
+      Highcharts.chart("pie_chart", {
+         chart: {
+            type: "pie",
+            options3d: {
+               enabled: true,
+               alpha: 45,
+               beta: 0,
+            },
+         },
+         title: {
+            text: "Participation in Extracurricular Activities",
+         },
+         tooltip: {
+            pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+         },
+         plotOptions: {
+            pie: {
+               allowPointSelect: true,
+               cursor: "pointer",
+               depth: 35,
+               dataLabels: {
+                  enabled: true,
+                  format: "{point.name}",
+               },
+            },
+         },
+         series: [
+            {
+               type: "pie",
+               name: "Participation",
+               data: [
+                  ["Sports", 40.0],
+                  ["Music", 20.0],
+                  {
+                     name: "Drama",
+                     y: 10.0,
+                     sliced: true,
+                     selected: true,
+                  },
+                  ["Art", 15.0],
+                  ["Debate", 10.0],
+                  ["Other", 5.0],
+               ],
+            },
+         ],
+      });
+   </script>
+</div>
