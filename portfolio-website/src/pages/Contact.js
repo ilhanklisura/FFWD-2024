@@ -1,17 +1,8 @@
-// src/pages/Contact.js
-import React, { useState } from "react";
-import {
-   TextField,
-   Button,
-   Box,
-   Typography,
-   Container,
-   Paper,
-   Grid,
-   Modal,
-} from "@mui/material";
+import React from "react";
+import { Container, Grid, Box, Typography } from "@mui/material";
 import CustomTypography from "../components/CustomTypography";
 import { keyframes } from "@emotion/react";
+import ContactForm from "../components/ContactForm";
 
 const fadeIn = keyframes`
   from {
@@ -23,92 +14,11 @@ const fadeIn = keyframes`
 `;
 
 function Contact() {
-   const [name, setName] = useState("");
-   const [email, setEmail] = useState("");
-   const [message, setMessage] = useState("");
-   const [errors, setErrors] = useState({});
-   const [showConfirmation, setShowConfirmation] = useState(false);
-
-   const validate = () => {
-      let tempErrors = {};
-      tempErrors.name = name ? "" : "Name is required";
-      tempErrors.email = email ? "" : "Email is required";
-      tempErrors.message = message ? "" : "Message is required";
-      setErrors(tempErrors);
-      return Object.keys(tempErrors).length === 0;
-   };
-
-   const handleSubmit = (e) => {
-      e.preventDefault();
-      if (validate()) {
-         const contactData = { name, email, message };
-         localStorage.setItem("contactData", JSON.stringify(contactData));
-         console.log("Message sent:", contactData);
-
-         setShowConfirmation(true);
-         setTimeout(() => setShowConfirmation(false), 3000);
-
-         setName("");
-         setEmail("");
-         setMessage("");
-         setErrors({});
-      }
-   };
-
    return (
       <Container maxWidth="lg" sx={{ animation: `${fadeIn} .8s ease-in` }}>
          <Grid container spacing={4}>
             <Grid item xs={12} md={6}>
-               <Paper elevation={3} sx={{ p: 4 }}>
-                  <Box component="form" onSubmit={handleSubmit} noValidate>
-                     <CustomTypography variant="h4" sx={{ mb: 3 }}>
-                        Contact Me
-                     </CustomTypography>
-                     <TextField
-                        id="name"
-                        name="name"
-                        label="Name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        error={!!errors.name}
-                        helperText={errors.name}
-                        fullWidth
-                        margin="normal"
-                     />
-                     <TextField
-                        id="email"
-                        name="email"
-                        label="Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        error={!!errors.email}
-                        helperText={errors.email}
-                        fullWidth
-                        margin="normal"
-                     />
-                     <TextField
-                        id="message"
-                        name="message"
-                        label="Message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        error={!!errors.message}
-                        helperText={errors.message}
-                        fullWidth
-                        margin="normal"
-                        multiline
-                        rows={4}
-                     />
-                     <Button
-                        type="submit"
-                        variant="contained"
-                        color="primary"
-                        sx={{ mt: 2 }}
-                     >
-                        Submit
-                     </Button>
-                  </Box>
-               </Paper>
+               <ContactForm />
             </Grid>
             <Grid item xs={12} md={6}>
                <Box textAlign="center" sx={{ height: "100%" }}>
@@ -142,33 +52,6 @@ function Contact() {
                </Box>
             </Grid>
          </Grid>
-
-         {/* Confirmation Modal */}
-         <Modal
-            open={showConfirmation}
-            onClose={() => setShowConfirmation(false)}
-            aria-labelledby="confirmation-modal"
-            aria-describedby="confirmation-message"
-         >
-            <Box
-               sx={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  width: 300,
-                  bgcolor: "background.paper",
-                  border: "2px solid #000",
-                  boxShadow: 24,
-                  p: 4,
-                  textAlign: "center",
-               }}
-            >
-               <Typography id="confirmation-modal" variant="h6" component="h2">
-                  Message has been sent!
-               </Typography>
-            </Box>
-         </Modal>
       </Container>
    );
 }
