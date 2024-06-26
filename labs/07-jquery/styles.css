@@ -1,0 +1,13 @@
+.box {
+   width: 100px;
+   height: 100px;
+   background-color: white;
+}
+
+.outlined {
+   border: 1px solid black;
+}
+
+.round-edge {
+   border-radius: 15px;
+}
